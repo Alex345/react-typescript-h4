@@ -1,50 +1,16 @@
-# React + TypeScript + Vite
+Конвертер цветов из HEX в RGB
+===
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Вам необходимо разработать конвертер цветов из HEX в RGB.
 
-Currently, two official plugins are available:
+![Конвертер цветов](src/assets/preview.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Интерфейс конвертера
 
-## Expanding the ESLint configuration
+При правильном вводе цвета он показывает его представление в формате RGB и меняет цвет фона на заданный:
+![Цвет](src/assets/color.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Конвертер при вводе неправильного цвета в формате HEX должен сообщать об ошибке:
+![Ошибка](src/assets/error.png)
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Необходимо дожидаться ввода всех семи символов, включая решётку, чтобы принимать решение о том, показывать ошибку или менять цвет фона.
