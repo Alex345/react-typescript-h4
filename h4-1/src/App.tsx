@@ -2,9 +2,9 @@ import './App.css'
 import ConverterHEXToRGB from "./components/ConverterHEXToRGB";
 
 function App() {
-    return (
-        <ConverterHEXToRGB />
-    )
+  return (
+    <ConverterHEXToRGB/>
+  )
 }
 
 export default App

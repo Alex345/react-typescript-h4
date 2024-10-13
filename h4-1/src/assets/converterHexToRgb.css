@@ -1,38 +1,42 @@
 #root {
-    background: #fff;
+  background: #fff;
 }
+
 #root form {
-    align-items:  center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
+
 #root form input,
 #root form label {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
+
 #root form input {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 18px;
-    font-weight: bold;
-    height: 50px;
-    padding: 0;
-    text-align: center;
-    width: 250px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  height: 50px;
+  padding: 0;
+  text-align: center;
+  width: 250px;
 }
+
 #root form span {
-    background: rgba(0,0,0, .75);
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #fff;
-    font-size: 18px;
-    font-weight: bold;
-    height: 50px;
-    padding: 0;
-    width: 250px;
+  background: rgba(0, 0, 0, .75);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  height: 50px;
+  padding: 0;
+  width: 250px;
 }
